@@ -1,5 +1,16 @@
 {
-  "code": 10005,
-  "message": "投注失败",
-  "data": ""
+  "AppCnf": {
+    "addr": ":60001"
+  },
+  "MysqlCnf": {
+    "user": "root",
+    "pwd": "root",
+    "host": "127.0.0.1:3306",
+    "name": "test"
+  },
+  "RedisCnf": {
+    "pwd": "root",
+    "host": "127.0.0.1:3306",
+    "db": 0
+  }
 }
