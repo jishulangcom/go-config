@@ -7,12 +7,12 @@ import (
 
 func Test(t *testing.T) {
 	type ConfigDto struct {
-		MysqlCnf MysqlConfig
-		RedisCnf RedisConfig
+		MysqlCnf MysqlCnfDto
+		RedisCnf RedisCnfDto
 	}
 
 	var config ConfigDto
-	ConfigInit(&config)
+	NewConfig(&config, "")
 
 	fmt.Println("cinfig:", config)
 }
