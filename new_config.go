@@ -15,7 +15,7 @@ func NewConfig(config interface{}, env string) {
 	destPath := "./config"
 	is, _ := fun.DirIsExist(destPath)
 	if !is {
-		srcPath := fun.GetImportPackagePath("github.com/jishulangcom/go-config", "v0.0.4")
+		srcPath := fun.GetImportPackagePath("github.com/jishulangcom/go-config", "v0.0.5")
 		srcPath = filepath.Join(srcPath, dirName)
 		err := fun.DirCopy(srcPath, destPath)
 		if err != nil {
