@@ -1,7 +1,7 @@
 package config
 
 type PostgreSqlCnfDto struct {
-	Host    string `yaml:"host" toml:"host" json:"host" bson:"host"`                 // 地址
+	Host    string `yaml:"host" toml:"host" json:"host" bson:"host"`                 // 服务器地址
 	Port    int    `yaml:"port" toml:"port" json:"port" bson:"port"`                 // 端口
 	User    string `yaml:"user" toml:"user" json:"user" bson:"user"`                 // 用户名
 	Pwd     string `yaml:"pwd" toml:"pwd" json:"pwd" bson:"pwd"`                     // 密码
