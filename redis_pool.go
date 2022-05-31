@@ -18,7 +18,7 @@ type RedisPoolCnfDto struct {
 
 }
 
-var RedisPoolCnf RedisPoolCnfDto = RedisPoolCnfDto{
+var RedisPoolCnf = RedisPoolCnfDto{
 	PoolSize:           4,
 	MinIdleConns:       10,
 	DialTimeout:        5,
@@ -33,5 +33,4 @@ var RedisPoolCnf RedisPoolCnfDto = RedisPoolCnfDto{
 	MaxRetryBackoff:    512,
 	Timeout:            5,
 	KeepAlive:          5,
-
 }
