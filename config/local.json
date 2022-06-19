@@ -3,14 +3,18 @@
     "addr": ":60001"
   },
   "MysqlCnf": {
+    "host": "127.0.0.1",
+    "port": 3306,
     "user": "root",
-    "pwd": "root",
-    "host": "127.0.0.1:3306",
-    "name": "test"
+    "pwd": "",
+    "dbname": "",
+    "debug": true
   },
   "RedisCnf": {
-    "pwd": "root",
-    "host": "127.0.0.1:3306",
-    "db": 0
+    "host": "127.0.0.1",
+    "port": 6379,
+    "pwd": "",
+    "db": 0,
+    "debug": true
   }
 }

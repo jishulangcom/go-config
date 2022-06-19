@@ -3,13 +3,12 @@ package config
 import (
 	"github.com/jishulangcom/go-fun"
 	"github.com/spf13/viper"
-	"log"
 	"path/filepath"
 	"time"
 )
 
 // new一个配置
-func NewConfig(config interface{}, env string) {
+func NewConfig(conf interface{}, env string) {
 	// 配置目录
 	dirName := "config"
 	destPath := "./config"
@@ -39,8 +38,7 @@ func NewConfig(config interface{}, env string) {
 	}
 
 	//var config ConfigDto
-	if err := viperObj.Unmarshal(&config); err != nil {
-		log.Println("配置转换结构异常")
+	if err := viperObj.Unmarshal(&conf); err != nil {
 		panic(err)
 	}
 }
